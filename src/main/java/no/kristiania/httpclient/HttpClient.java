@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class HttpClient {
+    public HttpClient(String hostname, int port, String requestTarget) {
+
+    }
+
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("urlecho.appspot.com", 80);
 
@@ -25,5 +29,9 @@ public class HttpClient {
             System.out.print((char)c);
         }
 
+    }
+
+    public int getResponseCode() {
+        return 0;
     }
 }
